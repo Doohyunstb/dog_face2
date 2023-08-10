@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1HYniYzEgMRAHYMtbtGqj-Zl7nB1Mg6uW
 """
 import streamlit as st
-import opencv-python as cv2
+import cv2
 import dlib
 import imutils
 from imutils import face_utils
