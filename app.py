@@ -7,6 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1HYniYzEgMRAHYMtbtGqj-Zl7nB1Mg6uW
 """
 
+pip install cv2
+
 import streamlit as st
 import cv2
 import dlib
@@ -17,11 +19,8 @@ import matplotlib.pyplot as plt
 
 import face_recognition
 
-from google.colab import drive
-drive.mount('/content/drive')
-
-face_landmark_detector_path = '/content/drive/MyDrive/Github/dog_face2/dogHeadDetector.dat'
-face_landmark_predictor_path = '/content/drive/MyDrive/Github/dog_face2/landmarkDetector.dat'
+face_landmark_detector_path = '/mount/src/dog_face2/dogHeadDetector.dat'
+face_landmark_predictor_path = '/mount/src/dog_face2/landmarkDetector.dat'
 
 detector = dlib.cnn_face_detection_model_v1(face_landmark_detector_path)
 predictor = dlib.shape_predictor(face_landmark_predictor_path)
