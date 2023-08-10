@@ -2,5 +2,5 @@ opencv-python
 dlib
 imutils
 numpy
-matplotlib.pyplot
+matplotlib
 face_recognition
