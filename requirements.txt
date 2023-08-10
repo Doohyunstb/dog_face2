@@ -1,7 +1,6 @@
 cv2
 dlib
 imutils
-imutils
 numpy
 matplotlib.pyplot
 face_recognition
